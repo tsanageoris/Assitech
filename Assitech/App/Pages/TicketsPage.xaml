@@ -1,0 +1,7 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Assitech.App.TicketsPage" Title="Tickets">
+<Grid RowDefinitions="*,Auto" Padding="16">
+<CollectionView x:Name="List" SelectionMode="Single" SelectionChanged="OnSelect"><CollectionView.ItemTemplate><DataTemplate>
+<Border Padding="12" Margin="0,0,0,10"><VerticalStackLayout><Label Text="{Binding Id}" TextColor="{StaticResource Primary}" FontAttributes="Bold"/><Label Text="{Binding Sujet}"/><Label Text="{Binding Statut}" FontSize="13"/></VerticalStackLayout></Border>
+</DataTemplate></CollectionView.ItemTemplate></CollectionView>
+<Button Grid.Row="1" Text="Créer ticket" Clicked="OnNew"/>
+</Grid></ContentPage>

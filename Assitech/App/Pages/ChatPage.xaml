@@ -1,0 +1,5 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Assitech.App.ChatPage" Title="Discussion">
+<Grid RowDefinitions="*,Auto" Padding="12">
+<CollectionView x:Name="Msgs"><CollectionView.ItemTemplate><DataTemplate><Label Text="{Binding Text}" Padding="10" Margin="0,4"/></DataTemplate></CollectionView.ItemTemplate></CollectionView>
+<Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="8"><Entry x:Name="Box" Placeholder="Écrire un message…"/><Button Grid.Column="1" Text="➤" WidthRequest="52" Clicked="OnSend"/></Grid>
+</Grid></ContentPage>
