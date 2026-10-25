@@ -1,0 +1,8 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Assitech.App.LoginPage" Title="Se connecter">
+<VerticalStackLayout Padding="24" Spacing="12">
+<Label Text="Bienvenue" FontSize="26" FontAttributes="Bold"/><Label Text="Connectez-vous pour accéder à votre espace professionnel"/>
+<Entry x:Name="Email" Placeholder="exemple@gmail.com" Keyboard="Email"/>
+<Entry x:Name="Pwd" Placeholder="Mot de passe" IsPassword="True"/>
+<Label x:Name="Err" TextColor="Red"/>
+<Button Text="Se connecter" Clicked="OnLogin"/>
+</VerticalStackLayout></ContentPage>
